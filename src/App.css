@@ -1,38 +1,105 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn .mr-5 {
+    margin-right: 5px;
+}
+
+.btn .ml-5 {
+    margin-left: 5px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.panel-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+#panel__close-btn {
+    cursor: pointer;
+}
+
+#panel__close-btn:hover {
+    color: red;
+}
+
+.mt-4 {
+    margin-top: 10px;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.sort_selected::after {
+    content: "\fe0c";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0px 0px 0px 10px;
+    display: inline-block;
+}
+
+#task-status {
+    cursor: pointer;
+}
+
+.sort_selected::after {
+    content: '\f00c';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0px Opx 0px 10px;
+    display: inline-block;
 }
